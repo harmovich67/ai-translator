@@ -1,0 +1,49 @@
+{
+    "name": "truevs/ai-translator",
+    "description": "Framework-agnostic translations, inline live editing, full-page Gemini translation, and first-class Laravel integration.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "translation",
+        "laravel",
+        "gemini",
+        "ai",
+        "localization",
+        "inline-editor"
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "suggest": {
+        "ext-curl": "Required for the built-in Gemini client.",
+        "ext-pdo": "Required for database-backed live translation.",
+        "laravel/framework": "Required for automatic Laravel integration (Laravel 10+)."
+    },
+    "autoload": {
+        "psr-4": {
+            "TrueVs\\AiTranslator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TrueVs\\AiTranslator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TrueVs\\AiTranslator\\Laravel\\AiTranslatorServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
