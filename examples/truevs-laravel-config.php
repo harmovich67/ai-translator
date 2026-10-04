@@ -2,7 +2,7 @@
 
 /*
  * Merge this into config/ai-translator.php when the host application uses
- * the same database schema as the original True Ventures project.
+ * the same database schema as the original GlitchFix project.
  */
 return [
     'languages' => [
