@@ -29,7 +29,7 @@ The core has no framework dependency. The Laravel bridge is loaded only inside L
 ثم نفّذ:
 
 ```bash
-composer update truevs/ai-translator
+composer require harmovich67/ai-translator
 php artisan ai-translator:install
 php artisan migrate
 ```
@@ -114,7 +114,7 @@ $translator->get('common.welcome', ['name' => 'Sara'], 'ar');
 Install from Packagist after publishing:
 
 ```bash
-composer require truevs/ai-translator
+composer require harmovich67/ai-translator
 ```
 
 Or use the same Composer `path` repository shown above. A minimal framework-free example is in [`examples/standalone.php`](examples/standalone.php).

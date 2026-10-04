@@ -1,8 +1,19 @@
 {
-    "name": "truevs/ai-translator",
+    "name": "harmovich67/ai-translator",
     "description": "Framework-agnostic translations, inline live editing, full-page Gemini translation, and first-class Laravel integration.",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/harmovich67/ai-translator",
+    "authors": [
+        {
+            "name": "harmovich67",
+            "homepage": "https://github.com/harmovich67"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/harmovich67/ai-translator/issues",
+        "source": "https://github.com/harmovich67/ai-translator"
+    },
     "keywords": [
         "translation",
         "laravel",

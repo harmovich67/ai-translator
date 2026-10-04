@@ -1,5 +1,25 @@
 <?php
 
+if (!function_exists('env')) {
+    function env(string $key, mixed $default = null): mixed
+    {
+        $value = getenv($key);
+        if ($value === false) {
+            $value = $_ENV[$key] ?? $_SERVER[$key] ?? false;
+        }
+        if ($value === false) {
+            return $default;
+        }
+        return match (strtolower((string) $value)) {
+            'true', '(true)' => true,
+            'false', '(false)' => false,
+            'empty', '(empty)' => '',
+            'null', '(null)' => null,
+            default => $value,
+        };
+    }
+}
+
 return [
     'enabled' => env('AI_TRANSLATOR_ENABLED', true),
 
